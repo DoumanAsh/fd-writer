@@ -1,0 +1,22 @@
+[package]
+name = "fd-writer"
+version = "1.0.0"
+authors = ["Douman <douman@gmx.se>"]
+keywords = ["fd"]
+description = "Writer to file descriptor using libc"
+readme = "README.md"
+repository = "https://github.com/DoumanAsh/fd-writer"
+license = "BSL-1.0"
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+    "README.md"
+]
+edition = "2018"
+
+[dependencies.libc]
+version = "0.2"
+default-features = false
+
+[features]
+std = []
